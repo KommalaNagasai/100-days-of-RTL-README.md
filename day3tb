@@ -1,0 +1,16 @@
+module decoder_tb();
+reg [1:0]I;
+wire [3:0]Y;
+integer i;
+decoder DUT(I,Y);
+initial
+begin
+for(i=0;i<4;i=i+1)
+begin
+I=i;
+#10;
+end
+end
+initial $monitor("input I=%b, output Y=%b", I,Y);
+initial #100 $finish;
+endmodule
