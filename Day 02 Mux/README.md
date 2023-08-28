@@ -1,9 +1,2 @@
-module mux41_mux21(i0,i1,i2,i3,s0,s1,y);
-input i0,i1,i2,i3;
-input s0,s1;
-output y;
-wire w1,w2;
-mux2to1 m1(i0,i1,s0,w1);
-mux2to1 m2(i2,i3,s0,w2);
-mux2to1 m3(w1,w2,s1,y);
-endmodule
+## Output of mux
+![mux4_1](https://github.com/KommalaNagasai/100-days-of-RTL-README.md/assets/143258557/44cf8989-e7e1-47f1-8b94-5978d9d13be0)
